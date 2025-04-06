@@ -1,0 +1,38 @@
+Rauntímagögn - Skjölun
+Lýsing á sviðum í xml-rauntímastraum:
+
+ 
+
+„time“ : tímastimpill frá GPS á forminu YYMMDDhhmmss
+
+„lat“, „lon“ : staðsetning vagns samkvæmt GPS
+
+„head“ : akstursstefna samkvæmt GPS í gráðum (0=N)
+
+„fix“ : segir til um gæði GPS upplýsinga ef fix er 0 er GPS ekki að virka eða sér ekki næganlega mörg GPS-gervitungl til að upplýsingarnar séu marktækar
+
+„route“ er leiðarnúmerið
+
+„stop“ er stöðvarnúmer sem síðast var farið um
+
+„next“ er næsta stöðvarnúmer
+
+ 
+
+búnaðurinn sendir GPS upplýsingar þegar viss tími hefur liðið frá síðast eða þegar vissir atburðir gerast, venjulega nokkrar sekúntur, þá segir sviðið „code“ til um atburðinn
+
+ 
+
+„code“ getur verið :
+
+2: vagn stöðvast
+
+3: vagn leggur af stað
+
+4: slökkt er á vél vagnsins (upplýsingar sendar á 2 mín fresti í þessu ástandi)
+
+5: vél vagns ræst aftur
+
+6: enginn atburður annað en tiltekni tími liðinn
+
+7: vagn fer um stoppistöð
